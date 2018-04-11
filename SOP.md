@@ -1,5 +1,4 @@
-# Anvio
-##Using Anvio on the Bigelow Server
+#Using Anvio on the Bigelow Server
 
 **Notes - This SOP assumes that you have already "fixed" your fasta headers, and mapped your reads to the fixed assembled file. If not, see the metagenome assembly SOP and come back to here. 
 
