@@ -49,7 +49,4 @@ if not a first time, !!!**note- we dont have super user privilege, so, lets set 
 ```anvi-merge */PROFILE.db -o SAMPLES-MERGED -c AM_ALLmeta_Norm_sccare.db```
 
 
-**** CANNOT USE ANVIO INTERACTIVE OFF OF THE BIGEWLOW SERVER, I know ( sad), so here you should download files to your own computer ( which is hopefully linux or your life will be slightly harder) and run the interactive from there. 
-#Welp, that was easy 
-```anvi-interactive -p SAMPLES-MERGED/PROFILE.db -c AM_ALLmeta_Norm_sccare.db --server-only -P 8080```
 
