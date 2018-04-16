@@ -22,7 +22,15 @@ I like to work in a fresh directory, but you dont have to do what I like to do
 #lets check out the stats 
 ```anvi-display-contigs-stats AM_ALLmeta_Norm_sccare.db```
 
-*** I can't figure out how to run the NCBI cogs ,there is a permissions issue somewhere here, so I am skipping that part of the normal protocol even though I would LOVE to have some COGs...
+*** This doesnt work on the Bigelow server if you are using Anvio v3 - must use Anvio4 ( If using Anvio4 - should use from the begining, or at least go back to the database creation step. 
+
+first time doing COGS? 
+Only need to do this once
+```anvi-setup-ncbi-cogs --cog-data-dir ~/cogdatadir```
+Note here that I am saving my cogdir in my homedir, and not SCGC - the next command will try to write temp files, so you need to put this somewhere you have write privilege to
+
+if not a first time, !!!**note- we dont have super user privilege, so, lets set a path 
+```anvi-run-ncbi-cogs --cog-data-dir ~/cogdatadir -c AM_ALLmeta_Norm_sccare.db -T 10```
 
 #initialize our sorted bam files, here I am working with 4 metagenomes that I Assembled together using SPAdes
 ```anvi-init-bam /mnt/storage/orcutt/Jackie_bioinformatics/AM_metageome/SC_meta_AllAssembled/Bowtie/68B1R1scaffolds.bam -o mapped68B1R1normscALL.bam```
